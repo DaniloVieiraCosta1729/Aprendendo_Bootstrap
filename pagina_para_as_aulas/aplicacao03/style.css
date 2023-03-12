@@ -1,0 +1,13 @@
+#lorem {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.quadrado {
+    background-color: red;
+    width: 30%;
+    height: 50px;
+    margin-left: 35%;
+    margin-right: 35%;
+
+}
