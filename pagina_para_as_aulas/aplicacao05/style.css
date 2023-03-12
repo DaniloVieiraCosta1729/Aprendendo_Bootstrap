@@ -1,0 +1,10 @@
+.row {
+    background-color: rgb(223, 158, 240);
+    height: 200px;
+}
+
+.col-3 {
+    background-color: antiquewhite;
+    border: solid 1px black;
+    padding: 20px;
+}

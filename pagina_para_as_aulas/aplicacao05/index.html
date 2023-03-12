@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Formatação de colunas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+        <!--Perceba que as coluna "col-3" se ajustam ao tamanho da linha "row". Podemos modificar o posicionamento vertical dos itens das colunas com a classe align-items-[posição]. Se usarmos a classe align no "row" todos serão modificados, mas se quisermos modificar apenas uma coluna, podemos aplicar o align-self-[posição] na coluna em si, ao inves de usar na linha row. -->
+        <div class="row align-items-center">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+        <div class="row">
+            <div class="col-3 align-self-start">Coluna 1</div>
+            <div class="col-3 align-self-center">Coluna 2</div>
+            <div class="col-3 align-self-end">Coluna 3</div>
+        </div>
+        <!--Podemos usar a classe justify-content na linha "row" para posicionar as coluna horizontalmente. -->
+        <div class="row justify-content-center">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+        <!--Podemos ordenar as colunas tbm, basta usar a classe "order-[número, começando por 0]" nas colunas em si-->
+        <div class="row justify-content-evenly">
+            <div class="col-3 order-2 align-self-start">Coluna 1</div>
+            <div class="col-3 order-0 align-self-end">Coluna 2</div>
+            <div class="col-3 order-1 align-self-center">Coluna 3</div>
+        </div>
+        <!-- Margens. O bootstrap oferece classes que podem ser aplicadas às colunas e que servem para adicionar margens. Uma dessas classes é o offset-[número] adiciona [número] colunas à esquerda.-->
+        <div class="row">
+            <div class="col-3 offset-1">Coluna 1</div>
+            <div class="col-3 offset-2">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+        <div class="row">
+            <div class="col-3">Div 1</div>
+            <div class="col-3 ms-auto">Div 2</div>
+            <!-- ms-auto significa margem start auto, que é a margem a esquerda.-->
+        </div>
+        <div class="row">
+            <div class="col-3 ms-auto">Div 1</div>
+            <div class="col-3 ms-auto">Div 2</div>
+        </div>
+        <div class="row">
+            <div class="col-3 mx-auto">Div 1</div>
+        </div>
+        <div class="row">
+            <div class="col-3 mx-auto align-self-center">Div 1</div>
+        </div>
+    </div>
+    <h3><a href="/pagina_para_as_aulas/index.html">Voltar ao Início</a></h3>
+</body>
+</html>
