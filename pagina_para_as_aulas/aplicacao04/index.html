@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Sistema de grid layout</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-black bg-opacity-50 h400">
+                <!--O bootstrap fornece um grid com 12 colunas. Podemos particionar essas colunas da forma que desejarmos, ou seja, podemos montar grids com no máximo 12 colunas ou em n colunas tais que a soma das n seja igual a doze. A nomenclatura da classe é bem intuitiva: dentro de um "container", criamos uma linha ("row") que conterá as nossas colunas, o código -> col-3 (usa 3/12 colunas em para formar a primeira coluna) bg-black (background black) bg-opacity-50 (background com opacidade de 50%). Lembre, aquele h400 é apenas uma classe nossa mesmo, não é do bootstrap-->
+            </div>
+            <div class="col-9 bg-black bg-opacity-75 h400">
+                <!--Se nós especificarmos quantas colunas a div do meio ocupará e especificarmos as das extremidades com "col" apenas, o bootstrap fará com que as divs das extremidades recebam a mesma largura e essa largura pode ser numa proporção racional. Porem não podemos especificar uma proporção racional, exemplo, "col-3.2 não existe."-->
+
+            </div>
+            <div class="col bg-black bg-opacity-50 h400">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-black bg-opacity-25 h75"></div>
+            <div class="col-md-3 col-sm-12 bg-black bg-opacity-100 h250"></div>
+            <div class="col-md-9 col-sm-12 bg-black bg-opacity-50 h250"></div>
+            <div class="col-12 bg-black bg-opacity-25 h75"></div>
+        </div>
+    </div>
+    <h3><a href="/pagina_para_as_aulas/index.html">Voltar ao Início</a></h3>
+</body>
+</html>
