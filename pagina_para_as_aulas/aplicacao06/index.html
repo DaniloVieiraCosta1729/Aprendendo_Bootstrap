@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Tipografia</title>
+</head>
+<body>
+    <h1>Tipografia</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ad, obcaecati molestias sit pariatur placeat rem reiciendis, libero minima, iure nemo quae harum corrupti asperiores similique consequuntur inventore amet perspiciatis.</p>
+    <div class="container">
+        <h1>h1 - Titulo de nível 1</h1>
+        <h2>h2 - Titulo de nível 2</h2>
+        <h3>h3 - Titulo de nível 3</h3>
+        <h4>h4 - Titulo de nível 4</h4>
+        <h5>h5 - Titulo de nível 5</h5>
+        <h6>h6 - Titulo de nível 6</h6>
+        <h7>h7 - Titulo de nível 7</h7>
+    </div>
+    <hr>
+    <div class="container">
+        <p class="h1">.h1 - Classe de Título de nível 1</p>
+        <p class="h2">.h2 - Classe de Título de nível 2</p>
+        <p class="h3">.h3 - Classe de Título de nível 3</p>
+        <p class="h4">.h4 - Classe de Título de nível 4</p>
+        <p class="h5">.h5 - Classe de Título de nível 5</p>
+        <p class="h6">.h6 - Classe de Título de nível 6</p>
+        <p class="h7">.h7 - Classe de Título de nível 7</p>
+
+        <p>Podemos usar as Classes .h[número] para estilizar um texto com os estilos de título h[número]. Exemplo, o texto abaixo está escrito dentro de uma tag h1, mas está estilizado com .h5</p>
+        <h1 class="h5">Exemplo (h1 com classe .h5)</h1>
+    </div>
+    <hr>
+    <div class="container">
+        <p class="display-1">Estilizando com a classe .display-[1]</p>
+        <p class="display-2">Estilizando com a classe .display-[2]</p>
+        <p class="display-3">Estilizando com a classe .display-[3]</p>
+        <p class="display-4">Estilizando com a classe .display-[4]</p>
+        <p class="display-5">Estilizando com a classe .display-[5]</p>
+        <p class="display-6">Estilizando com a classe .display-[6]</p>
+        <p class="display-7">Estilizando com a classe .display-[7]</p>
+    </div>
+    <hr>
+    <div class="container">
+        <p>Podemos usar a classe <span class="lead">.lead</span> para estilizar o texto de, por exemplo, paragrafos. Essa classe é bem interessante quando queremos dar um destaque a um treche específico do texto.</p>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rerum vero ex neque veniam ducimus dicta. Dicta perspiciatis exercitationem quasi modi distinctio incidunt quibusdam, sed repudiandae odit officia impedit culpa.</p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2 class="display-6">Vamos ver como ficam os textos dos elementos html a seguir.</h6>
+        <p>tag - <mark>mark</mark></p>
+        <p>tag - <del>del</del></p>
+        <p>tag - <s>s</s></p>
+        <p>tag - <ins>ins</ins></p>
+        <p>tag - <u>u</u></p>
+        <p>tag - <small>small</small></p>
+        <p>tag - <strong>strong</strong></p>
+        <p>tag - <em>em</em></p>
+        <p>tag - abbr <abbr title="Mongo, Express, React, Node">MERN</abbr></p>
+
+        <p class="display-6">Como o bootstrap estilaza citações grandes? Abaixo há um texto em uma tag blockquote usando a classe blockquote.</p>
+        <figure class="text-end">
+            <blockquote class="blockquote">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus totam natus ullam vero, minus repellat veniam eligendi dicta est? Reprehenderit perspiciatis laborum magnam nihil ipsum laboriosam sint eos excepturi?"</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite>Fulano famoso</cite>, Diretor de cinema.
+            </figcaption>
+        </figure>
+        <hr>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus totam natus ullam vero, minus repellat veniam eligendi dicta est? Reprehenderit perspiciatis laborum magnam nihil ipsum laboriosam sint eos excepturi?"</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite>Fulano famoso</cite>, Diretor de cinema.
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <blockquote class="blockquote">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus totam natus ullam vero, minus repellat veniam eligendi dicta est? Reprehenderit perspiciatis laborum magnam nihil ipsum laboriosam sint eos excepturi?"</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite>Fulano famoso</cite>, Diretor de cinema.
+            </figcaption>
+        </figure>
+    </div>
+    <hr>
+    <div class="container">
+        <h2 class="display-6">Estilos de listas</h2>
+        <ul class="list-unstyled">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+        </ul>
+        <hr>
+        <ul class="list-inline">
+            <li class="list-inline-item">Item 1</li>
+            <li class="list-inline-item">Item 2</li>
+            <li class="list-inline-item">Item 3</li>
+            <li class="list-inline-item">Item 4</li>
+            <li class="list-inline-item">Item 5</li>
+            <li class="list-inline-item">Item 6</li>
+            <li class="list-inline-item">Item 7</li>
+        </ul>
+        <hr>
+        <dl>
+            <dt>Termo 1</dt>
+            <dd>Descrição do termo 1</dd>
+            <dt>Termo 2</dt>
+            <dd>Descrição do termo 2</dd>
+            <dt>Termo 3</dt>
+            <dd>Descrição do termo 3</dd>
+            <dt>Termo 4</dt>
+            <dd>Descrição do termo 4</dd>
+            <dt>Termo 5</dt>
+            <dd>Descrição do termo 5</dd>
+        </dl>
+    </div>
+    <h3><a href="/pagina_para_as_aulas/index.html">Voltar ao Início</a></h3>
+</body>
+</html>
