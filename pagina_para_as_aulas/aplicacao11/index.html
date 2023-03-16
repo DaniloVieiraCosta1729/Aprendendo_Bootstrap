@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Margens e Paddings</title>
+</head>
+<body>
+    <div class="container bg-light">
+        <!--
+            m-0 m-1 ... m-5 são uma forma de colocar margem no elemento. O 5 equivale a 3rem;
+
+            p-0 p-1 ... p-5 são uma forma de colocar padding no elemento.
+
+            A função que converte os números do bootstrap (0, 1, ..., 5) em rem não é linear.
+
+            Podemos usar px para informar que os valores de padding devem ser aplicados apenas na esquerda e direita do elemento. Para informar que que desejamos colocar uma margem somente no topo e abaixo, usando o my.
+        -->
+
+        <p class="text-bg-warning pt-5 pe-4 me-0">a Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt a laudantium quae maxime ullam natus laboriosam, earum voluptatibus blanditiis iusto!</p>
+        <p class="text-bg-warning m-5 pb-3 text-center">b Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt a laudantium quae maxime ullam natus laboriosam, earum voluptatibus blanditiis iusto!</p>
+        <p class="text-bg-warning p-5 pb-0">c Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt a laudantium quae maxime ullam natus laboriosam, earum voluptatibus blanditiis iusto!</p>
+
+        <div class="container bg-primary mx-auto" style="height: 50px; width: 50px;"></div>
+    </div>
+</body>
+</html>
