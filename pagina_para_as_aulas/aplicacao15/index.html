@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="container p-5">
+        <for>
+            <div class="mb-3">
+                <label for="email" form="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control form-control-plaintext" id="email" placeholder="exemplo@exemplo.com">
+                <div class="form-text">Não compartilharemos o seu e-mail com terceiros.</div>
+            </div>
+            <div class="mb-3">
+                <label for="senha" for="senha" class="form-label">Senha:</label>
+                <input type="text" id="senha" class="form-control">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="lembrar">
+                <label for="lembrar" class="form-check-label">Lembrar</label>
+            </div>        
+            <button type="submit" class="btn btn-light btn-outline-primary mb-3">Entrar</button>
+        </for>
+        <input type="file" class="form-control mb-3">
+
+        <input type="text" class="form-control" list="cidades" placeholder="Em qual cidade você mora?">
+        <datalist id="cidades">
+            <option value="Cidade1"></option>
+            <option value="Cidade2"></option>
+            <option value="Cidade3"></option>
+            <option value="Cidade4"></option>
+            <option value="Cidade5"></option>
+            <option value="Cidade6"></option>
+            <option value="Cidade7"></option>
+            <option value="Cidade8"></option>
+            <option value="Cidade9"></option>
+            <option value="Cidade10"></option>
+        </datalist>
+    </div>
+
+
+    <hr>
+    <a href="/pagina_para_as_aulas/index.html" class="btn btn-primary">Voltar ao início</a>
+</body>
+</html>
